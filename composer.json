@@ -1,0 +1,7 @@
+{
+  "name": "DrRoach/WebEndAPI",
+  "require": {
+    "php": ">=5.4.0",
+    "ext-mbcrypt": "*"
+  }
+}
