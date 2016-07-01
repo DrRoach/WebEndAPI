@@ -1,6 +1,6 @@
 <?php
 
-namespace WebEndAPI\User\Account;
+namespace WebEndAPI\User;
 
 class Account {
 
