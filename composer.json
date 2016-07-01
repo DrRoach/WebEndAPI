@@ -1,5 +1,5 @@
 {
-  "name": "DrRoach/WebEndAPI",
+  "name": "drroach/web-end-api",
   "require": {
     "php": ">=5.4.0",
     "ext-mbcrypt": "*"
