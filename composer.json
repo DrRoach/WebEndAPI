@@ -5,6 +5,6 @@
     "ext-mcrypt": "*"
   },
   "autoload": {
-    "psr-4": { "WebEndAPI\\": "/"}
+    "psr-4": { "WebEndAPI\\": ""}
   }
 }
