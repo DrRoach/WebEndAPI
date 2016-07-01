@@ -1,6 +1,6 @@
 <?php
 
-namespace BackendAPI\Test;
+namespace WebEndAPI\Test;
 
 class Test {
     public static function test()
