@@ -5,6 +5,6 @@ namespace WebEndAPI;
 class Test {
     public static function test()
     {
-        var_dump('here');
+        var_dump('Connected to WebEndAPI');
     }
 }
