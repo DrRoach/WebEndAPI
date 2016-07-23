@@ -87,6 +87,16 @@ class Account extends Database
             ];
         }
 
+        /**
+         * Make sure that the two passwords match
+         */
+        if ($user['password'] !== $user['passwordConfirm']) {
+            return [
+                'success' => false,
+                'message' => 'Please make sure that your passwords match.'
+            ];
+        }
+
         $salt = self::generateSalt();
 
         /**
@@ -99,6 +109,7 @@ class Account extends Database
          * Make sure that we pass all custom data, but first unset the password.
          */
         unset($user['password']);
+        unset($user['passwordConfirm']);
         $customData = [];
         foreach ($user as $column => $value) {
             $customData[$column] = $value;
