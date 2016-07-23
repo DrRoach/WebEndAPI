@@ -14,7 +14,7 @@ class Database {
      */
     public static $_HOSTNAME = '127.0.0.1';
     public static $_USERNAME = 'root';
-    public static $_PASSWORD = 'root';
+    public static $_PASSWORD = '';
     public static $_DATABASE = 'discovery';
 
     /**
