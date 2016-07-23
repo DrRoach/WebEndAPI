@@ -25,7 +25,7 @@ class Account extends Database
      * When `$_schema` is updated in a file, this should be recognised and the table should be updated.
      * Should it? Would this put data in danger of being accidentally deleted?
      */
-    protected static $_schema = [
+    public static $_schema = [
         'users' => [
             [
                 'name' => 'id',
@@ -71,7 +71,7 @@ class Account extends Database
         }
 
         //Check to see if the username is available
-        $userCheck = Database::Get([
+        $userCheck = Database::get([
             'table' => 'users',
             'fields' => ['id'],
             'conditions' => [
