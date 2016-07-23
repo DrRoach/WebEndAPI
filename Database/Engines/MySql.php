@@ -115,9 +115,10 @@ class MySql implements Base {
          */
         if (!empty($query['conditions'])) {
             $stmt .= " WHERE ";
+            $key = 0;
             foreach ($query['conditions'] as $field => $value) {
                 $stmt .= $field . "='" . addslashes($value) . "'";
-                if (($key + 1) != sizeof($query['fields'])) {
+                if (($key++ + 1) != sizeof($query['conditions'])) {
                     $stmt .= ",";
                 }
             }
